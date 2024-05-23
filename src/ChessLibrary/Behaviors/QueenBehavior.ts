@@ -3,11 +3,9 @@
  * It is used to determine the possible moves for a Queen piece in a chess game.
  * @packageDocumentation
  */
-
 import { Behavior } from "./Behavior";
 import { ChessBoard } from "../ChessBoard";
 import { Point } from "../Constants/Point";
-
 /**
  * @class
  * @public
