@@ -7,6 +7,9 @@ import { ChessBoard } from "../ChessBoard";
 
 /**
  * Interface representing a behavior of a chess piece.
+ * @public
+ * @interface
+ * @method getAllMoves - Get all possible moves for a chess piece.
  */
 export interface IBehavior {
     /**
