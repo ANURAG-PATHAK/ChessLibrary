@@ -1,8 +1,3 @@
-/**
- * Abstract class representing the behavior of a chess piece.
- * This class is part of the ChessEngine library and provides methods to determine the possible moves of a chess piece.
- * @packageDocumentation
- */
 import { ChessBoard } from "../ChessBoard";
 import { Point } from "../Constants/Point";
 import { IBehavior } from "./IBehavior";
@@ -36,7 +31,7 @@ export abstract class Behavior implements IBehavior {
      * @param {boolean} pieceColor - The color of the knocking piece.
      * @returns {boolean} - Returns true if the chess piece can knock out the other piece, false otherwise.
      */
-    protected canKnockOut(board: ChessBoard, location: Point, pieceColor: boolean): boolean {
+    protected canKnock(board: ChessBoard, location: Point, pieceColor: boolean): boolean {
         const piece: IPiece = board.board[location.x][location.y].piece;
         return piece != null && piece.isWhite != pieceColor
     }
