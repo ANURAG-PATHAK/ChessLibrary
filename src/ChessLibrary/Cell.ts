@@ -10,12 +10,12 @@ import { Point } from "./Constants/Point"
  * @public
  * @class
  * 
- * @property {IPiece | undefined} piece - The chess piece on the cell. Undefined if the cell is empty.
+ * @property {IPiece} piece - The chess piece on the cell. Undefined if the cell is empty.
  * @property {boolean} cellColor - The color of the cell. True for white, false for black.
  * @property {Point} location - The location of the cell on the board.
  */
 export class Cell {
-    public piece: IPiece | undefined;
+    public piece: IPiece;
     public cellColor: boolean;
     public location: Point;
 
@@ -25,7 +25,7 @@ export class Cell {
      * @param {boolean} cellColor - The color of the cell. True for white, false for black.
      * @param {IPiece} [piece] - The chess piece on the cell. Undefined if the cell is empty.
      */
-    constructor(location: Point, cellColor: boolean, piece?: IPiece) {
+    constructor(location: Point, cellColor: boolean, piece: IPiece) {
         this.location = location;
         this.cellColor = cellColor;
         this.piece = piece;
