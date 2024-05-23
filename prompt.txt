@@ -1,0 +1,1 @@
+write a professional documentation for this class JSDOC preferabbly don't over clutter but give proper information and also remember this is going to be a packaged library so make sure the person using this library should get all the information about the members abd functions
