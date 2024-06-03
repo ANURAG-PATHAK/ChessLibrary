@@ -7,6 +7,7 @@
 import { IBehavior } from "../Behaviors/IBehavior";
 import { PawnBehavior } from "../Behaviors/PawnBehavior";
 import { IPiece } from "./IPiece";
+import { PieceName } from "../Constants/PieceName";
 
 /**
  * @class
@@ -33,6 +34,14 @@ export class Pawn implements IPiece {
     public behavior: IBehavior;
 
     /**
+     * @public
+     * @type {PieceName}
+     * 
+     * The name of the Pawn piece.
+     */
+    public pieceName: PieceName;
+
+    /**
      * Creates a new Pawn piece.
      * 
      * @public
@@ -42,5 +51,6 @@ export class Pawn implements IPiece {
     constructor(isWhite: boolean) {
         this.isWhite = isWhite;
         this.behavior = new PawnBehavior();
+        this.pieceName = PieceName.Pawn;
     }
 }

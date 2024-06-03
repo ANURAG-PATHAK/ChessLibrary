@@ -7,6 +7,7 @@
 import { IPiece } from "./IPiece";
 import { IBehavior } from "../Behaviors/IBehavior";
 import { KingBehavior } from "../Behaviors/KingBehavior";
+import { PieceName } from "../Constants/PieceName";
 
 /**
  * @class
@@ -33,6 +34,14 @@ export class King implements IPiece {
     public behavior: IBehavior;
 
     /**
+     * @public
+     * @type {PieceName}
+     * 
+     * The name of the King piece.
+     */
+    public pieceName: PieceName;
+
+    /**
      * Creates a new King piece.
      * 
      * @public
@@ -42,5 +51,6 @@ export class King implements IPiece {
     constructor(isWhite: boolean) {
         this.isWhite = isWhite;
         this.behavior = new KingBehavior();
+        this.pieceName = PieceName.King;
     }
 }

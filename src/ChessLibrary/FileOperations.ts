@@ -47,4 +47,14 @@ export class FileOperations {
         const jsonString = JSON.stringify(gameState);
         fs.writeFileSync(file, jsonString);
     }
+
+    /**
+     * Checks if a file exists.
+     * @static
+     * @param {string} file - The path to the file to be checked.
+     * @returns {boolean} - True if the file exists, false otherwise.
+     */
+    static fileExists(file: string): boolean {
+        return fs.existsSync(file);
+    }
 }

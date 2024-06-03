@@ -7,6 +7,7 @@
 import { IBehavior } from "../Behaviors/IBehavior";
 import { RookBehavior } from "../Behaviors/RookBehavior";
 import { IPiece } from "./IPiece";
+import { PieceName } from "../Constants/PieceName";
 
 /**
  * @class
@@ -33,6 +34,14 @@ export class Rook implements IPiece {
     public behavior: IBehavior;
 
     /**
+     * @public
+     * @type {PieceName}
+     * 
+     * The name of the Rook piece.
+     */
+    public pieceName: PieceName;
+
+    /**
      * Creates a new Rook piece.
      * 
      * @public
@@ -42,5 +51,6 @@ export class Rook implements IPiece {
     constructor(isWhite: boolean) {
         this.isWhite = isWhite;
         this.behavior = new RookBehavior();
+        this.pieceName = PieceName.Rook;
     }
 }

@@ -8,6 +8,8 @@ import { IBehavior } from "../Behaviors/IBehavior";
 import { QueenBehavior } from "../Behaviors/QueenBehavior";
 import { IPiece } from "./IPiece";
 
+import { PieceName } from "../Constants/PieceName";
+
 /**
  * @class
  * @public
@@ -33,6 +35,14 @@ export class Queen implements IPiece {
     public behavior: IBehavior;
 
     /**
+     * @public
+     * @type {PieceName}
+     * 
+     * The name of the Queen piece.
+     */
+    public pieceName: PieceName;
+
+    /**
      * Creates a new Queen piece.
      * 
      * @public
@@ -42,5 +52,6 @@ export class Queen implements IPiece {
     constructor(isWhite: boolean) {
         this.isWhite = isWhite;
         this.behavior = new QueenBehavior();
+        this.pieceName = PieceName.Queen;
     }
 }

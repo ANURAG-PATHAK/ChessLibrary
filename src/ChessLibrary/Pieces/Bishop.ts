@@ -7,6 +7,7 @@
 import { IPiece } from "./IPiece";
 import { IBehavior } from "../Behaviors/IBehavior";
 import { BishopBehavior } from "../Behaviors/BishopBehavior";
+import { PieceName } from "../Constants/PieceName";
 /**
  * @class
  * @public
@@ -32,6 +33,14 @@ export class Bishop implements IPiece {
     public behavior: IBehavior;
 
     /**
+     * @public
+     * @type {PieceName}
+     * 
+     * The name of the Bishop piece.
+     */
+    public pieceName: PieceName;
+
+    /**
      * Creates a new Bishop piece.
      * 
      * @public
@@ -41,5 +50,6 @@ export class Bishop implements IPiece {
     constructor(isWhite: boolean) {
         this.isWhite = isWhite;
         this.behavior = new BishopBehavior();
+        this.pieceName = PieceName.Bishop;
     }
 }

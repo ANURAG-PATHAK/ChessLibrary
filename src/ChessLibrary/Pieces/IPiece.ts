@@ -3,6 +3,7 @@
  * @packageDocumentation
  */
 import { IBehavior } from "../Behaviors/IBehavior";
+import { PieceName } from "../Constants/PieceName";
 
 /**
  * Interface representing a chess piece.
@@ -19,4 +20,10 @@ export interface IPiece {
      * @type {IBehavior}
      */
     behavior: IBehavior;
+
+    /**
+     * The name of the chess piece.
+     * @type {PieceName}
+     */
+    pieceName: PieceName;
 }
