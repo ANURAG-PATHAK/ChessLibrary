@@ -1,5 +1,5 @@
 {
-  "name": "ChessLibrary",
+  "name": "@anurag-pathak/chess",
   "version": "0.0.1",
   "description": "A MultiPlayer Chess Library designed and implemented in TypeScript",
   "main": "dist/index.js",
