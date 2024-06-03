@@ -32,8 +32,8 @@ export abstract class Behavior implements IBehavior {
      * @returns {boolean} - Returns true if the chess piece can knock out the other piece, false otherwise.
      */
     protected canKnock(board: ChessBoard, location: Point, pieceColor: boolean): boolean {
-        const piece: IPiece = board.board[location.x][location.y].piece;
-        return piece != null && piece.isWhite != pieceColor
+        const piece: IPiece | undefined = board.board[location.x][location.y].piece;
+        return piece != null && piece.isWhite != pieceColor;
     }
 
     /**

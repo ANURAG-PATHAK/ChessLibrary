@@ -1,1 +1,0 @@
-console.log("Fuck implement the FrontEnd")
