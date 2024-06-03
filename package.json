@@ -1,14 +1,9 @@
 {
-  "name": "chessengine",
+  "name": "chess-engine",
   "version": "0.0.1",
   "description": "A simple chess engine",
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/ANURAG-PATHAK/ChessLibrary.git"
@@ -16,12 +11,10 @@
   "keywords": [],
   "author": "Anurag Pathak",
   "license": "MIT",
+  "files": [
+    "/dist"
+  ],
   "devDependencies": {
-    "@types/node": "^20.14.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0"
-  },
-  "dependencies": {
-    "tsup": "^8.1.0"
+    "@types/node": "^20.14.0"
   }
 }
