@@ -1,7 +1,7 @@
 {
-  "name": "chess-engine",
+  "name": "ChessLibrary",
   "version": "0.0.1",
-  "description": "A simple chess engine",
+  "description": "A MultiPlayer Chess Library designed and implemented in TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
