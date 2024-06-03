@@ -9,3 +9,5 @@ export { PieceMotionEventArgs } from './PieceMotionEventArgs';
 export { PiecePromotionEventArgs } from './PiecePromotionEventArgs';
 export { Point } from './Constants/Point';
 export { PieceName } from './Constants/PieceName';
+export * as Behaviors from './Behaviors';
+export * as Pieces from './Pieces';
