@@ -7,8 +7,8 @@ import { GameStateInformation } from './GameStateInformation';
 import { PieceInfo } from './PieceInfo';
 import { PieceMotionEventArgs } from './PieceMotionEventArgs';
 import { PiecePromotionEventArgs } from './PiecePromotionEventArgs';
-
-
+import { Point } from './Constants/Point';
+import { PieceName } from './Constants/PieceName';
 export {
     Cell,
     CellFactory,
@@ -18,5 +18,7 @@ export {
     GameStateInformation,
     PieceInfo,
     PieceMotionEventArgs,
-    PiecePromotionEventArgs
+    PiecePromotionEventArgs,
+    Point,
+    PieceName,
 }
