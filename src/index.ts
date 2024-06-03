@@ -10,30 +10,24 @@ export { PiecePromotionEventArgs } from './PiecePromotionEventArgs';
 export { Point } from './Constants/Point';
 export { PieceName } from './Constants/PieceName';
 
-import { BishopBehavior, KingBehavior, KnightBehavior, PawnBehavior, QueenBehavior, RookBehavior, Behavior } from './Behaviors';
-const Behaviors = {
-    Behavior,
+export {
     BishopBehavior,
     KingBehavior,
     KnightBehavior,
     PawnBehavior,
     QueenBehavior,
-    RookBehavior
-};
-export { Behaviors };
+    RookBehavior,
+    Behavior,
+    IBehavior
+} from './Behaviors';
 
-import { Pawn, King, Knight, Queen, Rook, Bishop } from './Pieces';
-const Pieces = {
+export {
     Pawn,
     King,
     Knight,
     Queen,
     Rook,
-    Bishop
-};
-export { Pieces };
+    Bishop,
+    IPiece
+} from './Pieces';
 
-import { IBehavior } from './Behaviors';
-import { IPiece } from './Pieces';
-
-export type { IBehavior, IPiece };
