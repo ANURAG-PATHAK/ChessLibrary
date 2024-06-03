@@ -1,0 +1,18 @@
+# Ignore all test files
+**/*.test.ts
+
+# Ignore all development files
+**/*.dev.ts
+
+# Ignore all documentation files
+**/*.md
+
+# Ignore all configuration files
+.gitignore
+tsconfig.json
+
+# Ignore all HTML files
+**/*.html
+
+# Ignore all CSS files
+**/*.css
