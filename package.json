@@ -1,6 +1,6 @@
 {
   "name": "@anurag-pathak/chess",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A MultiPlayer Chess Library designed and implemented in TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,6 @@
     "/dist"
   ],
   "devDependencies": {
-    "@types/node": "^20.14.0",
+    "@types/node": "^20.14.0"
   }
 }
