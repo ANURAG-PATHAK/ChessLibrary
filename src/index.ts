@@ -1,6 +1,7 @@
 export { Cell } from './Cell';
 export { CellFactory } from './CellFactory';
 export { ChessBoard } from './ChessBoard';
+export { ChessGame } from './ChessGame';
 export { FileOperations } from './FileOperations';
 export { GameOverEventArgs } from './GameOverEventArgs';
 export { GameStateInformation } from './GameStateInformation';
@@ -11,23 +12,23 @@ export { Point } from './Constants/Point';
 export { PieceName } from './Constants/PieceName';
 
 export {
+    Behavior,
     BishopBehavior,
+    IBehavior,
     KingBehavior,
     KnightBehavior,
     PawnBehavior,
     QueenBehavior,
-    RookBehavior,
-    Behavior,
-    IBehavior
+    RookBehavior
 } from './Behaviors';
 
 export {
-    Pawn,
+    Bishop,
+    IPiece,
     King,
     Knight,
+    Pawn,
     Queen,
-    Rook,
-    Bishop,
-    IPiece
+    Rook
 } from './Pieces';
 
